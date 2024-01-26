@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "chai": "^5.0.3",
+    "cypress": "^13.6.3",
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open"
+  }
+}
