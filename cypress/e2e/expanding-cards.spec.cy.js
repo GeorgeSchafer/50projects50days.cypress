@@ -1,29 +1,36 @@
-import { expect } from 'chai'
-
-
-const url = "https://50projects50days.com/projects/expanding-cards/";
+/// <reference types="Cypress" />
 
 describe("Expanding Cards page", () => {
-	beforeEach(() => {
-        cy.visit(url);
+	before(() => {
+        cy.visit('/expanding-cards');
+	});
+
+    it("Correct URL", () => {
+        const panelText = [
+            'Explore The World',
+            'Wild Forest',
+            'Sunny Beach',
+            'City on Winter',
+            'Mountains - Clouds'
+        ];
+        let i = -1;
+
 		cy.url()
-            .should("include", "/projects/expanding-cards/");
-	});
+            .should("include", "/expanding-cards/");
 
-	it("Container loads", () => {
-		cy.get(".container");
-	});
 
-	it("Panels", () => {
-		cy
-            .get(".panel")
-            .click({multiple:true});
-
-        cy
-            .get(".panel")
+		cy.get(".container")
+            .find('.panel')
             .find('h3')
-            .click({multiple:true});
+            .each( h3 => {
+                i++;
+                cy.wrap(h3)
+                    .should('contain', panelText[i])
+            });
+
+        
+        // panelText.forEach( str => {})
+    })
 
 
-	});
 });
