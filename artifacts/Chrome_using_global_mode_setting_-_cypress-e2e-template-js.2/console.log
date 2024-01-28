@@ -1,0 +1,82 @@
+Sauce Cypress Runner 12.1.0
+Running Cypress 13.6.3
+Preparing npm environment
+Finished
+
+
+DevTools listening on ws://127.0.0.1:49892/devtools/browser/d3dd9f98-2a6b-47a1-8e97-edd96c73cff4
+Missing baseUrl in compilerOptions. tsconfig-paths will be skipped
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.6.3                                                                         │
+  │ Browser:        Custom Chrome 121                                                              │
+  │ Node Version:   v20.10.0 (D:\sauce-cypress-runner\12.1.0\bundle\node.exe)                      │
+  │ Specs:          1 found (template.js)                                                          │
+  │ Searched:       cypress/e2e/template.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  template.js                                                                     (1 of 1)
+
+
+  Expanding Cards
+    1) Values
+   8 |     it("Values", () => {
+   9 |         cy.url()
+> 10 |         .should("include", "/path/");
+     |          ^
+  11 |     })
+  12 | 
+  13 | 
+Timed out retrying after 4000ms: expected 'https://50projects50days.com/projects/' to include '/path/'
+
+
+  0 passing (5s)
+  1 failing
+
+  1) Expanding Cards
+       Values:
+     AssertionError: Timed out retrying after 4000ms: expected 'https://50projects50days.com/projects/' to include '/path/'
+      at Context.eval (webpack:///./cypress/e2e/template.js:10:9)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     template.js                                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  D:\sauce-cypress-runner\12.1.0\bundle\__project__\__assets__\template.js\Expandi     (1920x957)
+     ng Cards -- Values (failed).png                                                                
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  template.js                              00:04        1        -        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 1 failed (100%)                     00:04        1        -        1        -        -  
+

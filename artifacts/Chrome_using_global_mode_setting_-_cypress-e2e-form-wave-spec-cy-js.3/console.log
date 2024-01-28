@@ -1,0 +1,85 @@
+Sauce Cypress Runner 12.1.0
+Running Cypress 13.6.3
+Preparing npm environment
+Finished
+
+
+DevTools listening on ws://127.0.0.1:49800/devtools/browser/aa8c7752-08e6-4aa1-b47f-f6d3149ef820
+Missing baseUrl in compilerOptions. tsconfig-paths will be skipped
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.6.3                                                                         │
+  │ Browser:        Custom Chrome 121                                                              │
+  │ Node Version:   v20.10.0 (D:\sauce-cypress-runner\12.1.0\bundle\node.exe)                      │
+  │ Specs:          1 found (form-wave.spec.cy.js)                                                 │
+  │ Searched:       cypress/e2e/form-wave.spec.cy.js                                               │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  form-wave.spec.cy.js                                                            (1 of 1)
+
+
+  Form-Wave
+    √ Happy Path
+    1) Sad Path
+- expected:  '1px red'
++ actual:  undefined
+  57 |         cy.get('body').click()
+  58 | 
+> 59 |         cy.get('@username').should('have.attr', 'border', '1px red')
+     |                             ^
+  60 |         cy.get('@password').should('have.attr', 'border', '1px red')
+  61 |     })
+  62 | })
+Timed out retrying after 4000ms: expected '<input>' to have attribute 'border'
+
+
+  1 passing (8s)
+  1 failing
+
+  1) Form-Wave
+       Sad Path:
+     AssertionError: Timed out retrying after 4000ms: expected '<input>' to have attribute 'border'
+      at Context.eval (webpack:///./cypress/e2e/form-wave.spec.cy.js:59:28)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     form-wave.spec.cy.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  D:\sauce-cypress-runner\12.1.0\bundle\__project__\__assets__\form-wave.spec.cy.j     (1920x957)
+     s\Form-Wave -- Sad Path (failed).png                                                           
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  form-wave.spec.cy.js                     00:08        2        1        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 1 failed (100%)                     00:08        2        1        1        -        -  
+
