@@ -32,7 +32,7 @@ cypress:
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
 rootDir: ./
 suites:
-  - name: "Chrome using global mode setting" # Since the suite doesn't specify the `mode`, it'll inherit the mode specified via `defaults.mode` (see line number 3 and 4 of this config file).
+  - name: "50 Projects, 50 Days" # Since the suite doesn't specify the `mode`, it'll inherit the mode specified via `defaults.mode` (see line number 3 and 4 of this config file).
     browser: "chrome"
     platformName: "Windows 11" # Only relevant when running a test against the sauce cloud mode.
     screenResolution: "1920x1080"  # (optional) Only relevant when running a test against the sauce cloud mode.
