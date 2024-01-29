@@ -1,36 +1,33 @@
 /// <reference types="Cypress" />
 
 describe("Expanding Cards page", () => {
-	before(() => {
-        cy.visit('/expanding-cards');
-	});
+	beforeEach(() => {
+        cy.visit('/expanding-cards')
+	})
 
     it("Correct URL", () => {
+        cy.url()
+            .should("include", "/expanding-cards/")
+    })
+
+    it("Validate Elements and Text", () => {
         const panelText = [
             'Explore The World',
             'Wild Forest',
             'Sunny Beach',
             'City on Winter',
             'Mountains - Clouds'
-        ];
-        let i = -1;
+        ]
+        
+        let i = 0
 
-		cy.url()
-            .should("include", "/expanding-cards/");
-
-
-		cy.get(".container")
+        cy.get(".container")
             .find('.panel')
             .find('h3')
             .each( h3 => {
-                i++;
                 cy.wrap(h3)
                     .should('contain', panelText[i])
-            });
-
-        
-        // panelText.forEach( str => {})
+                i++
+            })
     })
-
-
-});
+})

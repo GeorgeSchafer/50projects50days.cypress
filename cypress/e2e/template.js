@@ -1,13 +1,13 @@
 /// <reference types="Cypress" />
 
-describe("Expanding Cards", () => {
+describe("Template Name", () => {
 	before(() => {
-        cy.visit('');
+        cy.visit('/');
 	});
 
-    it("Values", () => {
+    it("Elements and Text", () => {
         cy.url()
-        .should("include", "/path/");
+        .should("include", "/");
     })
 
 
