@@ -5,6 +5,7 @@
     "mocha": "^10.2.0"
   },
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "npx cypress open",
+    "sauce": "saucectl run"
   }
 }

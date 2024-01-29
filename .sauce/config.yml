@@ -38,7 +38,7 @@ suites:
     screenResolution: "1920x1080"  # (optional) Only relevant when running a test against the sauce cloud mode.
     shard: spec # (optional) Allocate one VM per spec for a high degree of parallelism.
     config:
-      specPattern: [ "cypress/e2e/**/*.*" ] # Cypress native glob support.
+      specPattern: [ "cypress/e2e/**/*.spec.js" ] # Cypress native glob support.
   # - name: "Firefox in docker"
   #   mode: docker
   #   browser: "firefox"
