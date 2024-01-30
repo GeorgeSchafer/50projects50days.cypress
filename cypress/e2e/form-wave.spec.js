@@ -1,12 +1,12 @@
 /// <reference types="Cypress" />
 
 describe('Form-Wave', () => {
-	beforeEach(() => {
-		cy.visit('/form-wave')
-		cy.url().should('include', '/form-wave/')
-	})
+    beforeEach(() => {
+        cy.visit('/form-wave')
+        cy.url().should('include', '/form-wave/')
+    })
 
-	it('Happy Path', () => {
+    it('Happy Path', () => {
 
         // @h1
         cy.get('.container').find('h1').as('h1')
