@@ -1,0 +1,61 @@
+Sauce Cypress Runner 12.1.0
+Running Cypress 13.6.3
+Preparing npm environment
+Finished
+
+
+DevTools listening on ws://127.0.0.1:49806/devtools/browser/d09cde10-8003-4201-97ca-ec3c9bdd9e56
+Missing baseUrl in compilerOptions. tsconfig-paths will be skipped
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.6.3                                                                         │
+  │ Browser:        Custom Chrome 121                                                              │
+  │ Node Version:   v20.10.0 (D:\sauce-cypress-runner\12.1.0\bundle\node.exe)                      │
+  │ Specs:          1 found (expanding-cards.spec.js)                                              │
+  │ Searched:       cypress/e2e/expanding-cards.spec.js                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  expanding-cards.spec.js                                                         (1 of 1)
+
+
+  Expanding Cards page
+    √ Correct URL
+    √ Validate Elements and Text
+
+
+  2 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     expanding-cards.spec.js                                                          │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  expanding-cards.spec.js                  00:02        2        2        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:02        2        2        -        -        -  
+
