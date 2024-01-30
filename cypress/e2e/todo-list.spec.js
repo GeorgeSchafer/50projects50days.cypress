@@ -2,14 +2,15 @@
 
 describe('Todo List', () => {
     let counter = 1
+    const url = '/todo-list/'
 
     beforeEach(() => {
-        cy.visit('/todo-list/')
+        cy.visit(url)
     })
 
     it(`Test ${counter}: URL Verification`, () => {
         cy.url()
-            .should('include', '/todo-list/')
+        .should('include', url)
     })
     counter++
 
@@ -69,14 +70,19 @@ describe('Todo List', () => {
         .as('input')
 
         todos.forEach( todo => {
-            cy.get('@input').type(todo).type('\n')
-            cy.get('@input').then( jqinput => {
+            cy.get('@input')
+            .type(todo)
+            .type('\n')
+            
+            cy.get('@input')
+            .then( jqinput => {
                 const text = jqinput.text()
                 expect(text).to.eql.toString('')
             })
         })
 
-        cy.get('li').then( jqli => {
+        cy.get('li')
+        .then( jqli => {
             const text = jqli.text()
             expect(text).to.eql.toString(todos[i])
             i++
@@ -92,9 +98,11 @@ describe('Todo List', () => {
 
         const i = 0
 
-        cy.get('@input').type('\n')
+        cy.get('@input')
+        .type('\n')
 
-        cy.get('ul').should('not.contain.html', 'li')
+        cy.get('ul')
+        .should('not.contain.html', 'li')
     })
     counter++
 
