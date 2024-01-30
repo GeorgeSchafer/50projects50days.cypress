@@ -1,0 +1,64 @@
+Sauce Cypress Runner 12.1.0
+Running Cypress 13.6.3
+Preparing npm environment
+Finished
+
+
+DevTools listening on ws://127.0.0.1:49851/devtools/browser/bbd80ee0-99b0-4120-ab35-d0ac25cd883e
+Missing baseUrl in compilerOptions. tsconfig-paths will be skipped
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.6.3                                                                         │
+  │ Browser:        Custom Chrome 121                                                              │
+  │ Node Version:   v20.10.0 (D:\sauce-cypress-runner\12.1.0\bundle\node.exe)                      │
+  │ Specs:          1 found (todo-list.spec.js)                                                    │
+  │ Searched:       cypress/e2e/todo-list.spec.js                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  todo-list.spec.js                                                               (1 of 1)
+
+
+  Template Name
+    √ Test 1: URL Verification
+    √ Test 2: HTML Elements
+    √ Test 3: Onload Text Values
+    √ Test 4: Functionality
+    √ Test 5: Sad path
+
+
+  5 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        5                                                                                │
+  │ Passing:      5                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     todo-list.spec.js                                                                │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  todo-list.spec.js                        00:04        5        5        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:04        5        5        -        -        -  
+
