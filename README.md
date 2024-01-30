@@ -10,4 +10,4 @@ These tests validate the functionality and the corresponding projects. As a bonu
 
 - On the next test, we have a form without validation implemented. As a result, we can write a test that will allow our developers to verify the form validation is working successfully when they write the code that outputs the page. This shows how we can catch errors before they go live. View the [results here](https://app.saucelabs.com/tests/fc13c51d37e647c6907821ee872fd3e6).
 
-- Here we have a static web page todo-list application. We are able to verify setup and functionality separately. You can view the [results here](https://app.saucelabs.com/tests/45b2de6eef334a35b44ba19b8e2abc79).
+- Also, we have a static web page todo-list application. We are able to verify setup and functionality separately. You can view the [results here](https://app.saucelabs.com/tests/45b2de6eef334a35b44ba19b8e2abc79).
