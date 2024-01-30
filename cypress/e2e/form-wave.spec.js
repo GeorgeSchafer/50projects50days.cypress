@@ -1,15 +1,16 @@
-/// <reference types="Cypress" />
+/// <reference types='Cypress' />
 
 describe('Form-Wave', () => {
     let counter = 1
+    const url = '/form-wave/'
 
     beforeEach(() => {
-        cy.visit('/form-wave')
+        cy.visit(url)
     })
 
     it(`Test ${counter}: URL Verification`, () => {
         cy.url()
-        .should('include', '/form-wave/')
+        .should('include', url)
     })
     counter++
 
@@ -47,7 +48,9 @@ describe('Form-Wave', () => {
         cy.get('@form')
         .find('.form-control')
         .then( jqdiv => {
-            cy.wrap(jqdiv).find('input').should('have.attr','required')
+            cy.wrap(jqdiv)
+            .find('input')
+            .should('have.attr','required')
         })
         
         cy.get('@button')
@@ -60,7 +63,7 @@ describe('Form-Wave', () => {
         .should('have.class', 'text')
         
         cy.get('@p')
-        .should('contain', "Don't have an account? ")
+        .should('contain', `Don't have an account? `)
         
         cy.get('@p')
         .find('a')
@@ -92,11 +95,11 @@ describe('Form-Wave', () => {
 
     it(`Test ${counter}: Error Discovery`, () => {
         // @username
-        cy.get('[type="text"]')
+        cy.get(`[type='text']`)
         .as('username')
         
         // @password
-        cy.get('[type="password"]')
+        cy.get(`[type='password']`)
         .as('password')
         
         // @button

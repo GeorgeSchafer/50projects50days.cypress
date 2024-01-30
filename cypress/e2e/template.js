@@ -1,14 +1,26 @@
 /// <reference types="Cypress" />
 
-describe("Template Name", () => {
-    before(() => {
-        cy.visit('/');
+describe("", () => {
+    let counter = 0
+    const url = '/URL/'
+
+    beforeEach(() => {
+        cy.visit(url)
     });
 
-    it("Elements and Text", () => {
+    it(`Test ${counter}: URL Verification`, () => {
         cy.url()
-        .should("include", "/");
+        .should('include', url)
     })
+    counter++
+
+    it(`Test ${counter}: Elements onload`, () => {
+    })
+    counter++
+
+    it(`Test ${counter}: Elements after actions`, () => {
+    })
+    counter++
 
 
 });

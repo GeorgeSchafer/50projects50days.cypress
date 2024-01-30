@@ -1,14 +1,16 @@
-/// <reference types="Cypress" />
+/// <reference types='Cypress' />
 
-describe("Expanding Cards page", () => {
+describe('Expanding Cards page', () => {
     let counter = 0
+    const url = '/expanding-cards/'
+
     beforeEach(() => {
-        cy.visit('/expanding-cards')
+        cy.visit(url)
     })
 
     it(`Test ${counter}: URL Verification`, () => {
         cy.url()
-        .should("include", "/expanding-cards/")
+        .should('include', url)
     })
     counter++
 
@@ -23,7 +25,7 @@ describe("Expanding Cards page", () => {
         
         let i = 0
 
-        cy.get(".container")
+        cy.get('.container')
         .find('.panel')
         .find('h3')
         .each( h3 => {
