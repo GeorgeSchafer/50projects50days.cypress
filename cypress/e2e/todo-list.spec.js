@@ -3,9 +3,9 @@
 describe('Todo List', () => {
     let counter = 1
 
-	beforeEach(() => {
+    beforeEach(() => {
         cy.visit('/todo-list/')
-	})
+    })
 
     it(`Test ${counter}: URL Verification`, () => {
         cy.url()

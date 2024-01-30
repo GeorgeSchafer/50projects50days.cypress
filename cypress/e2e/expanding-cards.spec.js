@@ -1,9 +1,9 @@
 /// <reference types="Cypress" />
 
 describe("Expanding Cards page", () => {
-	beforeEach(() => {
+    beforeEach(() => {
         cy.visit('/expanding-cards')
-	})
+    })
 
     it("Correct URL", () => {
         cy.url()
