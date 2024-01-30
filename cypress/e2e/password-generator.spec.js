@@ -8,7 +8,7 @@ describe("Password Generator", () => {
         cy.visit(url);
     });
 
-    it(`Test ${counter}: URL Verificatigit on`, () => {
+    it(`Test ${counter}: URL Verification`, () => {
         cy.url()
         .should('include', url)
     })
