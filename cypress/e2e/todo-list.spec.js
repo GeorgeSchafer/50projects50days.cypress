@@ -1,6 +1,6 @@
 /// <reference types='Cypress' />
 
-describe('Template Name', () => {
+describe('Todo List', () => {
     let counter = 1
 
 	beforeEach(() => {
