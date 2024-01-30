@@ -1,16 +1,18 @@
 /// <reference types="Cypress" />
 
 describe("Expanding Cards page", () => {
+    let counter = 0
     beforeEach(() => {
         cy.visit('/expanding-cards')
     })
 
-    it("Correct URL", () => {
+    it(`Test ${counter}: URL Verification`, () => {
         cy.url()
-            .should("include", "/expanding-cards/")
+        .should("include", "/expanding-cards/")
     })
+    counter++
 
-    it("Validate Elements and Text", () => {
+    it(`Test ${counter}: Validate Elements Implicitly and Text`, () => {
         const panelText = [
             'Explore The World',
             'Wild Forest',
@@ -22,12 +24,13 @@ describe("Expanding Cards page", () => {
         let i = 0
 
         cy.get(".container")
-            .find('.panel')
-            .find('h3')
-            .each( h3 => {
-                cy.wrap(h3)
-                    .should('contain', panelText[i])
-                i++
-            })
+        .find('.panel')
+        .find('h3')
+        .each( h3 => {
+            cy.wrap(h3)
+                .should('contain', panelText[i])
+            i++
+        })
     })
+    counter++
 })
