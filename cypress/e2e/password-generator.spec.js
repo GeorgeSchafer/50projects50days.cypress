@@ -2,7 +2,7 @@
 
 describe("Password Generator", () => {
     let counter = 0
-    const url = '/password-generator/'
+    const url = 'password-generator'
 
     beforeEach(() => {
         cy.visit(url);

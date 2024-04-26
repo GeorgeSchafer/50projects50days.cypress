@@ -2,7 +2,7 @@
 
 describe('Expanding Cards page', () => {
     let counter = 0
-    const url = '/expanding-cards/'
+    const url = 'expanding-cards'
 
     beforeEach(() => {
         cy.visit(url)

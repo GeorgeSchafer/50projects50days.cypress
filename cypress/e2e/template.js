@@ -2,7 +2,7 @@
 
 describe("", () => {
     let counter = 0
-    const url = '/URL/'
+    const url = 'URL'
 
     beforeEach(() => {
         cy.visit(url)

@@ -2,7 +2,7 @@
 
 describe('Form-Wave', () => {
     let counter = 1
-    const url = '/form-wave/'
+    const url = 'form-wave'
 
     beforeEach(() => {
         cy.visit(url)
