@@ -1,3 +1,6 @@
 [submodule "pages"]
 	path = pages
 	url = https://github.com/bradtraversy/50projects50days.git
+[submodule "sh"]
+	path = sh
+	url = https://www.github.com/jadedrakerider/KwikGit.git
