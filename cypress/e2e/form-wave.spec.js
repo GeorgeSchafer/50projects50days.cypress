@@ -107,7 +107,7 @@ describe('Form-Wave', () => {
         .as('button')
 
         cy.get('@username')
-        .type('   ')
+        .type('111')
         
         cy.get('@password')
         .type('111')

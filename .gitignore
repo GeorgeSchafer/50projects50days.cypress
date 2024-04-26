@@ -1,2 +1,5 @@
-/node_modules
-/sh
+node_modules/
+sh/
+pages/
+artifacts/
+
