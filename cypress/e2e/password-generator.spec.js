@@ -68,6 +68,45 @@ describe("Password Generator", () => {
     counter++
 
     it(`Test ${counter}: Elements after actions`, () => {
+
+        // @length
+        cy.get('input#length')
+        .as('length')
+
+        // @uppercase
+        cy.get('input#uppercase')
+        .as('uppercase')
+
+        // @lowercase
+        cy.get('input#lowercase')
+        .as('lowercase')
+
+        // @numbers
+        cy.get('input#numbers')
+        .as('numbers')
+
+        // @symbols
+        cy.get('input#symbols')
+        .as('symbols')
+
+        // @generate
+        cy.get('button#generate')
+        .as('generate')
+
+        // @clipboard
+        cy.get('button#clipboard')
+        .as('clipboard')
+
+        cy.get('@length')
+        .clear()
+        .type('4')
+
+        cy.get('@generate')
+        .click()
+
+        // Check the output
+
+
     })
     counter++
 });
